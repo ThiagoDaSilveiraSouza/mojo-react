@@ -1,0 +1,16 @@
+#what-we-do {
+  width: 100%;
+  background: var(--main-dark-bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#what-we-do .centralizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#what-we-do .centralizer h4 {
+  font-weight: 100;
+}

@@ -1,0 +1,48 @@
+#who-we-are .centralizer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#who-we-are .centralizer > div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 300;
+  height: auto;
+}
+
+.who-description h2 {
+  color: var(--green-color);
+  text-align: left;
+}
+.who-description h3 {
+  color: var(--dark-font-color);
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 395px;
+  font-weight: 400;
+}
+
+.who-description h4 {
+  font-size: 20px;
+  color: var(--green-color);
+}
+.who-description p {
+  color: #797979;
+  font-size: 15px;
+  line-height: 25px;
+}
+@media (max-width: 600px) {
+  #who-we-are .centralizer > div {
+    width: 100%;
+  }
+}
+
+/* who-animation */
+.who-animation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
