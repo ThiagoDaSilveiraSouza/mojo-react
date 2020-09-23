@@ -1,0 +1,11 @@
+.better-card {
+  width: 225px;
+  text-align: center;
+  margin: 40px 0;
+}
+.better-card h5 {
+  font-size: 20px;
+}
+.better-card p {
+  font-size: 15px;
+}
