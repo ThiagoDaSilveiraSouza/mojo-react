@@ -1,0 +1,135 @@
+/* carousel */
+.carousel {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.carousel-content {
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  width: fit-content;
+  box-sizing: border-box;
+}
+/* .carousel-arrows */
+.carousel-arrows {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+}
+.carousel:hover .carousel-arrows {
+  opacity: 1;
+}
+.carousel-left-arrow {
+  left: 0;
+}
+.carousel-right-arrow {
+  right: 0;
+  justify-self: flex-end;
+}
+.carousel-arrows p {
+  user-select: none;
+  transition: 0.3s;
+}
+.carousel-arrows:hover p {
+  transform: scale(1.2);
+}
+/* .category-element */
+.category-element {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  margin: 30px;
+  cursor: pointer;
+}
+/* .category-element-img */
+.category-element-img {
+  height: 209px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-element-img img {
+  width: 50%;
+}
+.category-element-img img:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+.category-element-button {
+  position: absolute;
+  background: var(--main-dark-bg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  user-select: none;
+}
+.category-element-button button {
+  border: none;
+  border-radius: 50px;
+  background: white;
+  padding: 5px 20px;
+  transform: translateY(400%);
+  opacity: 0;
+  transition: 0.3s;
+  user-select: none;
+}
+.category-element:hover .category-element-button {
+  opacity: 1;
+}
+.category-element:hover .category-element-button button {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.3s;
+}
+.category-element-description {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: black;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 20px;
+  height: 123px;
+}
+.category-element-description p,
+.category-element-description h3 {
+  margin: 0;
+}
+.category-element-description h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.category-element-description p {
+  font-size: 14px;
+  font-weight: 300;
+}
