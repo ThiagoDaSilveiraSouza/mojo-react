@@ -9,7 +9,7 @@ export const categoryList = [
     },
     {
         id: 2,
-        name: 'design ',
+        name: 'design',
         description: 'Tenha a sua marca fixada na mente do consumidor',
         color: 'var(--design-color)',
         imgPath: 'design-icon.svg',
@@ -17,7 +17,7 @@ export const categoryList = [
     },
     {
         id: 3,
-        name: 'marketing digital ',
+        name: 'marketing digital',
         description:
             'marketing digital Conquiste presença online e transforme seu público em clientes',
         color: 'var(--marketing-color)',

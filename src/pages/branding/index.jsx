@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './branding.css'
 import { Link } from 'react-router-dom'
+
+// Styled
+import { PageButton } from '../../index-styled'
 
 // Component
 import { Banner } from '../../components/banner'
 
+// Context
+import { ThemesContext } from '../../ThemesProvider'
 export const Branding = () => {
+  const [theme, setTheme] = useContext(ThemesContext)
+
+  useEffect(() => {
+    setTheme({ name: 'branding' })
+    window.scroll(0, 0)
+  }, [])
   const bannerElement = {
     title: 'Branding',
     desktopImgPath: './assets/banners/banner-branding.jpg',
@@ -52,9 +63,10 @@ export const Branding = () => {
           Sua marca precisa ter personalidade e propósitos para criar
           identificação com o público.
         </p>
-        <button className="page-button">
+        {/* <PageButton className="page-button"> */}
+        <PageButton bgColor={theme.name}>
           <Link to="#">Fale agora com um especialista</Link>
-        </button>
+        </PageButton>
       </div>
     </section>
   )

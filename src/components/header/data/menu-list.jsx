@@ -4,6 +4,7 @@ export const NavList = [
     name: 'home',
     colorClassName: 'teste',
     path: '/#',
+    elementId: 'header',
     child: [],
   },
 
@@ -12,6 +13,7 @@ export const NavList = [
     name: 'Quem somos',
     colorClassName: 'teste2',
     path: '/#who-we-are',
+    elementId: '#who-we-are',
     child: [],
   },
   {
@@ -19,6 +21,7 @@ export const NavList = [
     name: 'O que fazemos',
     colorClassName: 'teste3',
     path: '/#what-we-do',
+    elementId: '#what-we-do',
     child: [],
   },
   {
@@ -26,6 +29,7 @@ export const NavList = [
     name: 'Fale com a gente',
     colorClassName: 'teste4',
     path: '/#',
+    elementId: '#talk-to-us',
     child: [],
   },
 ]

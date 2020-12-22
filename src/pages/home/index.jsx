@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import './home.css'
 
 // Components
@@ -6,8 +6,14 @@ import { WhoWeAre } from './categorys/who-we-are'
 import { WhatWeDo } from './categorys/what-we-do'
 import { WhantsBetterResults } from './categorys/whants-better-results'
 import { Banner } from '../../components/banner'
+// Context
+import { ThemesContext } from '../../ThemesProvider'
 
 export const Home = ({ headerColor }) => {
+  const [, setTheme] = useContext(ThemesContext)
+  useEffect(() => {
+    setTheme({ name: 'home' })
+  }, [])
   const bannerElement = {
     title: 'A ',
     span: 'sua marca ',

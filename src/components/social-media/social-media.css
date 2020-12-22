@@ -9,14 +9,11 @@
   box-sizing: border-box;
   overflow: hidden;
   transition: 0.3s;
-  width: 105%;
-  height: 105%;
 }
 .social-media svg:hover {
   transform: scale(1.5);
 }
 .social-media svg path {
-  /* fill: blue !important; */
   background-color: white;
 }
 
@@ -46,6 +43,6 @@
 .icon-color-editoracao:hover {
   background: var(--editoracao-color);
 }
-.icon-color-editoracao:hover {
-  background: var(--editoracao-color);
+.icon-color-foto:hover {
+  background: var(--foto-color);
 }

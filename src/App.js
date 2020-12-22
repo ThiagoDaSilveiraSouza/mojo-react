@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 import { BrowserRouter } from "react-router-dom";
 import { Routes } from './routes'
@@ -8,17 +7,21 @@ import { Routes } from './routes'
 import { Header } from './components/header'
 import { Footer } from './components/footer'
 
+// context
+import { ThemesProvider } from './ThemesProvider'
+
 
 // pages
-function App() {
+export const App = () => {
 
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes />
-      <Footer />
-    </BrowserRouter>
+    <ThemesProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes />
+        <Footer />
+      </BrowserRouter>
+    </ThemesProvider>
   );
 }
 
-export default App;

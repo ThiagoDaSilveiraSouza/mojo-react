@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './design.css'
+
+// Styled
+import { PageButton } from '../../index-styled'
 
 // Component
 import { Banner } from '../../components/banner'
 import { DesignBenefits } from './components/design-benefits'
 
+// context
+import { ThemesContext } from '../../ThemesProvider'
+
 export const Design = () => {
+  const [theme, setTheme] = useContext(ThemesContext)
+  useEffect(() => {
+    setTheme({ name: 'design' })
+    window.scroll(0, 0)
+  }, [])
   const bannerElement = {
     title: 'Design',
     desktopImgPath: './assets/banners/banner-design.jpg',
@@ -51,6 +62,9 @@ export const Design = () => {
           para sua empresa alcançar:
         </h3>
         <DesignBenefits />
+        <PageButton bgColor={theme.name}>
+          <a href="#">Fale agora com um Especialista</a>
+        </PageButton>
       </div>
     </section>
   )

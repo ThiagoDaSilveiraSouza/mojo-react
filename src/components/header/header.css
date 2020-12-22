@@ -53,16 +53,73 @@ header .centralizer nav .social-media {
   width: 100%;
   transition: 0.3s;
   color: white;
-}
-.header-menu li a:hover {
   overflow: hidden;
-  transition: 0.3s;
+}
+/* font-theme */
+.font-theme-home a:hover {
   transform: scale(1.1);
   color: var(--green-color);
 }
-.active-menu {
+.active-menu .font-theme-home {
   color: var(--green-color) !important;
 }
+.font-theme-branding a:hover {
+  transform: scale(1.1);
+  color: var(--branding-color);
+}
+.active-menu .font-theme-branding {
+  color: var(--branding-color) !important;
+}
+.font-theme-e-commerce a:hover {
+  transform: scale(1.1);
+  color: var(--e-commerce-color);
+}
+.active-menu .font-theme-e-commerce {
+  color: var(--e-commerce-color) !important;
+}
+.font-theme-marketing a:hover {
+  transform: scale(1.1);
+  color: var(--marketing-color);
+}
+.active-menu .font-theme-marketing {
+  color: var(--marketing-color) !important;
+}
+.font-theme-social-media a:hover {
+  transform: scale(1.1);
+  color: var(--social-media-color);
+}
+.active-menu .font-theme-social-media {
+  color: var(--social-media-color) !important;
+}
+.font-theme-sites a:hover {
+  transform: scale(1.1);
+  color: var(--sites-color);
+}
+.active-menu .font-theme-sites {
+  color: var(--sites-color) !important;
+}
+.font-theme-design a:hover {
+  transform: scale(1.1);
+  color: var(--design-color);
+}
+.active-menu .font-theme-design {
+  color: var(--design-color) !important;
+}
+.font-theme-editoracao a:hover {
+  transform: scale(1.1);
+  color: var(--editoracao-color);
+}
+.active-menu .font-theme-editoracao {
+  color: var(--editoracao-color) !important;
+}
+.font-theme-foto a:hover {
+  transform: scale(1.1);
+  color: var(--foto-color);
+}
+.active-menu .font-theme-foto {
+  color: var(--foto-color) !important;
+}
+
 .header-sub-menu {
   position: absolute;
   top: 100%;

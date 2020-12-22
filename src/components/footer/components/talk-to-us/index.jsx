@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './talk-to-us.css'
+
+// styled
+import { InputSubmit } from './talk-to-us-styled'
 
 // components
 import { SocialMedia } from '../../../social-media'
 
+// Context
+import { ThemesContext } from '../../../../ThemesProvider'
+
 export const TalkToUs = () => {
+  const [theme] = useContext(ThemesContext)
   return (
     <section id="talk-to-us">
       <div className="centralizer">
@@ -44,7 +51,12 @@ export const TalkToUs = () => {
               className="form-fild"
               data-message
             ></textarea>
-            <input type="submit" placeholder="Enviar" data-form-button />
+            <InputSubmit
+              type="submit"
+              placeholder="Enviar"
+              data-form-button
+              bgColor={theme.name}
+            />
           </form>
 
           {/* contact */}
@@ -57,7 +69,7 @@ export const TalkToUs = () => {
               <img src="./assets/e-mail-icon.svg" alt="email" />
               contato@mojoagenciadigital.com.br
             </p>
-            <SocialMedia />
+            <SocialMedia atualCategory={`icon-color-${theme.name}`} />
           </div>
         </div>
       </div>

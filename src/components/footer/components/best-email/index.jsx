@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './best-email.css'
 
+// styled
+import { BestEmailSection } from './best-email-styled'
+
+// Context
+import { ThemesContext } from '../../../../ThemesProvider'
+
 export const BestEmail = () => {
+  const [theme] = useContext(ThemesContext)
   return (
-    <section id="best-email" data-id="4">
+    <BestEmailSection bgColor={theme.name} id="best-email" data-id="4">
       <div className="centralizer">
         <h3>Cadastre o seu melhor e-mail</h3>
         <h5> e receba dicas de como melhorar seu negócio</h5>
@@ -18,6 +25,6 @@ export const BestEmail = () => {
           </button>
         </form>
       </div>
-    </section>
+    </BestEmailSection>
   )
 }
